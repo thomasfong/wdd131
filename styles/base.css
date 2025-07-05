@@ -57,7 +57,7 @@ h1 {
   padding: 2rem;
 }
 
-#Profile {
+#profile {
   display: block;
   margin: 0 auto; 
   padding: 20px 0; 
@@ -96,10 +96,6 @@ h1 {
   padding: 10px;
   background-color:#8ecae6;
   border-radius: 20px 20px 0 0;
-}
-
-#profile {
-  padding: 20px 10px 10px 20px;
 }
 
 #me p {
@@ -153,6 +149,8 @@ h1 {
 #resources ul {
   padding-top: 40%;
 }
+
+
 main {
     max-width: 95%;
     width: 90%;
@@ -175,3 +173,4 @@ footer p, #year, #lastModified {
   color: #2ea564;
   font-weight: bold;
 }
+
