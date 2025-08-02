@@ -1,0 +1,86 @@
+        
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header{
+            background-color: #8ecae6;
+        }
+        
+        h1 {
+            color: white;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        section {
+            background-image: url('/images/hongkong.webp');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-color: #FF6B35;
+            height: 700px;
+            width: 1200;
+        }
+
+        div.header-left{
+            height: 300px;
+            width: 300px;
+            background-color: rgba(230, 236, 239, 0.5);
+            text-align: center;
+        }
+
+        div.header-left.h2 {
+            margin: 100px;
+        }
+
+        div.header-left.p {
+            margin: 100px 0 0 100px;
+            padding: 100px;
+
+        }
+        
+        h2, h3 {
+            background-color: #ff3546;
+            color: white;
+            margin-top: 40px;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+        }
+
+        div.container_right {
+            background-color: rgba(230, 236, 239, 0.5);
+            text-align: center;
+            margin: 20px 0 0 50px; 
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        footer {
+            background-color: #8ecae6;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .weather-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
