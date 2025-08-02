@@ -26,6 +26,9 @@
             background-color: #FF6B35;
             height: 700px;
             width: 1200;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
         }
 
         div.header-left{
@@ -33,6 +36,7 @@
             width: 300px;
             background-color: rgba(230, 236, 239, 0.5);
             text-align: center;
+
         }
 
         div.header-left.h2 {
@@ -56,9 +60,13 @@
 
         div.container_right {
             background-color: rgba(230, 236, 239, 0.5);
+            height: 200px;
+            width: 200px;
             text-align: center;
             margin: 20px 0 0 50px; 
         }
+
+
         
         strong {
             font-weight: bold;
