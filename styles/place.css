@@ -160,3 +160,67 @@ margin-top: 5px 0 10px 0;
 }
 
 
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    
+    section {
+        height: auto;
+        min-height: 600px;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .data-section {
+        width: 90%;
+        margin: 15px auto 0;
+        grid-column: 1;
+        grid-row: 1;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .weather-section {
+        width: 90%;
+        margin: 0 auto 15px;
+        grid-column: 1;
+        grid-row: 2;
+        height: auto;
+        padding: 15px;
+    }
+    
+    h2, h3 {
+        width: 100%;
+        margin: 0 0 15px 0;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .weather-title {
+        padding-left: 0;
+        justify-content: center;
+    }
+    
+    .data-section p, 
+    .weather-info p {
+        font-size: 0.95rem;
+        margin: 8px 0;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
