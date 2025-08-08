@@ -18,6 +18,13 @@
     </header>
 
     <section>
+
+        <picture>
+            <source srcset="images/hongkong-small.webp" media="(max-width: 600px)">
+            <img src="images/hongkong-large.webp" alt="Hong Kong Skyline" class="hero-image">
+        </picture>
+
+        <div class="grid-container">
         <div class="data-section">
             <h2>Data</h2>
             <p><strong>Area:</strong> 1,106 km<br>
@@ -30,8 +37,10 @@
         </div>
 
         <div class="weather-section">
-            <h3>Current Weather <img src="../images/icon.webp" alt="Weather Icon" class="weather-icon"></h3>
-            <div class="weather-info"></h3>
+            <h3 class="weather-title">
+                Weather
+                <img src="./images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+            </h3>
             <div class="weather-info">
                 <p><strong>Temperature:</strong> <span id="temperature">--</span> °C</p>
                 <p><strong>Conditions:</strong> <span id="conditions">--</span></p>
@@ -42,7 +51,7 @@
     </section>
 
     <footer>    
-        <p> &copy;<span id="currentYear"></span>🚀 Fong King Leong 🏝️ Hong Kong</p>
+        <p>&copy;<span id="currentYear"></span> Fong King Leong <span class="location">Hong Kong</span></p>
         <p id="lastModified"></p>
     </footer>
 </body>
