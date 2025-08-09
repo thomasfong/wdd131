@@ -68,15 +68,7 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // My own temple objects...
-  {
-    templeName: "Hong Kong China",
-    location: "Billings, Motana, Hong Kong",
-    dedicated: "1996, May, 23-29",
-    area: 51921,
-    imageUrl:
-    "https://www.churchofjesuschristtemples.org/hong-kong-china-temple/photographs/#Official-16"
-  },
+
   {
     templeName: "London England Temple",
     location: "Surrey, England",
@@ -92,6 +84,14 @@ const temples = [
     area: 10890,
     imageUrl:
     "https://www.churchofjesuschrist.org/imgs/94c4205c68ebf5c9680eea174c808221daed27ae/full/400,250/0/default"
+  },
+    {
+    templeName: "Hong Kong China",
+    location: "Billings, Motana, Hong Kong",
+    dedicated: "1996, May, 23-29",
+    area: 51921,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-6197.jpg"
   }
 ];
 
