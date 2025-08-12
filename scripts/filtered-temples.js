@@ -1,4 +1,3 @@
-// Obtain the DOM variables from the file
 const hamButton = document.getElementById('hamButton');
 const headerText = document.querySelector('.headerText');
 const nav = document.querySelector('.navigation');
@@ -10,7 +9,6 @@ const newTemple = document.getElementById('new');
 const large = document.getElementById('large');
 const small = document.getElementById('small');
 
-// Temple Object
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -84,32 +82,23 @@ const temples = [
     area: 10890,
     imageUrl:
     "https://www.churchofjesuschrist.org/imgs/94c4205c68ebf5c9680eea174c808221daed27ae/full/400,250/0/default"
-  },
-    {
-    templeName: "Hong Kong China",
-    location: "Billings, Motana, Hong Kong",
-    dedicated: "1996, May, 23-29",
-    area: 51921,
-    imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-6197.jpg"
   }
 ];
 
-// Create a function that creates all the temple objects for view
 function createTempleDiv(templeList){
-  // Before the loop clear the children from the container
+
   templeContainer.replaceChildren();
 
-  // Use a for loop through the object
+
   for (let i = 0; i < templeList.length; i++) {
-    // Obtain all the values from the object
+   
     let templeName = templeList[i].templeName;
     let location = templeList[i].location;
     let dedicated = templeList[i].dedicated;
     let area = templeList[i].area;
     let imageUrl = templeList[i].imageUrl;
 
-    // Create the elements
+    
     let newDiv = document.createElement('div');
     let newHeader = document.createElement('h3');  
     let newTempleLocationText = document.createElement('p');
@@ -117,7 +106,7 @@ function createTempleDiv(templeList){
     let newTempleAreaText = document.createElement('p');
     let newImg = document.createElement('img');
 
-    // Set the attributes and text of the elements
+  
     newHeader.textContent = templeName;
     newTempleLocationText.innerHTML = `<strong>Location:</strong> ${location}`;
     newTempleDedicatedText.innerHTML = `<strong>Dedicated:</strong> ${dedicated}`;
@@ -128,7 +117,7 @@ function createTempleDiv(templeList){
     newImg.height = 250;
     newImg.loading = "lazy";
 
-    // Append the elements
+  
     newDiv.appendChild(newHeader);
     newDiv.appendChild(newTempleLocationText);
     newDiv.appendChild(newTempleDedicatedText);
@@ -139,7 +128,7 @@ function createTempleDiv(templeList){
   }
 };
 
-// Filter the list into the proper types
+
 function filterSmall(){
   let smallTemples = temples.filter(temple => temple.area < 10000);
 
@@ -164,14 +153,12 @@ function filterNew(){
   return newTemples;
 };
 
-// Create a click event on the hamButton
 hamButton.addEventListener('click', () => {
     nav.classList.toggle('open');
     hamButton.classList.toggle('open');
-    headerText.classList.toggle('noShow'); // Make this not show to only have the hamburger content on screen
+    headerText.classList.toggle('noShow'); 
 });
 
-// Create click events for the nav
 home.addEventListener('click', () => {
   home.setAttribute('class', 'active');
   old.setAttribute('class', '');
@@ -222,5 +209,4 @@ small.addEventListener('click', () => {
   createTempleDiv(filterSmall());
 });
 
-// Call the function to be used at the start
 createTempleDiv(temples);
