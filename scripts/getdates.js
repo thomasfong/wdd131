@@ -1,6 +1,9 @@
-// Obtain the elements to display on the page
-const currentYear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
+// // Obtain the elements to display on the page
+// const currentYear = document.querySelector("#currentyear");
+// const lastModified = document.querySelector("#lastModified");
+
+document.querySelector('#currentYear').textContent = new Date().getFullYear();
+document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
 // Create the date object
 const currentDate = new Date();
